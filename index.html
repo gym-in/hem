@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>Uddevalla Gymnasieskola Start Informationsportal</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css" rel="stylesheet">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<style>
+	   body {
+	       scrollbar-base-color: grey;
+	       scrollbar-arrow-color: black;
+	       scrollbar-DarkShadow-Color: black;
+	   }
+	   h1, h2, h3, h4 {
+	       font-family: 'Open Sans', sans-serif;
+	   }
+	   em {
+	       background: #fbdde0;
+	   }
+	   .hit {
+	       display: inline-block;
+	       width: 125px;
+	       border: 2px solid black;
+	       margin: 10px;
+	       padding: 5px;
+	   }
+	</style>
+</head>
+<body>
+	<h1>Klasslista</h1>
+	<p>Välkommen till paradiset! Hitta din klass idag genom att skriva in ditt namn.</p>
+	<ul>
+		<li>
+			<a href="https://docs.google.com/document/d/e/2PACX-1vQg5IzckJkuVkaQNDbhnEhiBswa4vFve768cM4P3ZZUtiaGchDChqvSxKHt0xZBTEplxx1cJWmz24UI/pub">Gymnasieantagning FAQ</a>
+		</li>
+	</ul>
+	<img src="https://www.algolia.com/static_assets/images/press/downloads/search-by-algolia.png" alt="Aloglia" width="150" height="16" title="Aloglia, den service som möjliggör en sökfunktion!" >
+	<header>
+		<div>
+			<input id="search-input" placeholder="Sök (namn / klass)">
+		</div>
+	</header>
+	<main>
+		<div id="hits"></div>
+		<div id="pagination"></div>
+	</main>
+	<script id="hit-template" type="text/html">
+	 <div class="hit">
+	   <div class="hit-content">
+	     <a>{{{_highlightResult.Förnamn.value}}} {{{_highlightResult.Efternamn.value}}}</a><br>
+	     <a>Klass: {{{_highlightResult.Klass.value}}}</a><br>
+	     <a href="https://vklass.se/user.aspx?id={{{userID}}}">Vklass profil</a>
+	     <a href="mailto:gymnasieabuse@protonmail.com?subject=Namnbyte&amp;body=Jag%20vill%20ändra%20mitt%20synliga%20namn%20på%20sidan%20till%20*fyll%20önskat%20namn%20här*%0D%0AobjectID: {{objectID}}"><img src="flag_red.png" alt="Red flag" title="Anmäl namnbyte (email)" style="float: right;"></a>
+	   </div>
+	 </div>
+	</script>
+	 
+	<script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script> 
+	<script src="search.js"></script>
+</body>
+</html>
