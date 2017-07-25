@@ -1,3 +1,4 @@
+![preview](https://gym-in.github.io/hem/preview.png)
 # hem
 Sidan där 2017HT åk1 klasser listas! Repot / användarnamnet är förkortningar för att få en kort och snygg länk.
 
