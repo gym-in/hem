@@ -9,12 +9,10 @@
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<style>
 	   body {
+		   font-family: 'Open Sans', sans-serif;
 	       scrollbar-base-color: grey;
 	       scrollbar-arrow-color: black;
 	       scrollbar-DarkShadow-Color: black;
-	   }
-	   h1 {
-	       font-family: 'Open Sans', sans-serif;
 	   }
 	   em {
 	       background: #fbdde0;
@@ -52,8 +50,8 @@
 	<script id="hit-template" type="text/html">
 	 <div class="hit">
 	   <div class="hit-content">
-	     <a id="name">{{_highlightResult.Förnamn.value}} {{_highlightResult.Efternamn.value}}</a><br>
-	     <a id="class">Klass: {{_highlightResult.Klass.value}}</a><br>
+	     <a id="name">{{{_highlightResult.Förnamn.value}}} {{{_highlightResult.Efternamn.value}}}</a><br>
+	     <a id="class">Klass: {{{_highlightResult.Klass.value}}}</a><br>
 	     <a id="userID" href="https://vklass.se/user.aspx?id={{userID}}">Vklass profil</a>
 	     <a href="mailto:gymnasieabuse@protonmail.com?subject=Namnbyte&amp;body=Jag%20vill%20ändra%20mitt%20synliga%20namn%20på%20sidan%20till%20*fyll%20önskat%20namn%20här*%0D%0AobjectID: {{objectID}}"><img src="flag_red.png" alt="Red flag" title="Anmäl namnbyte (email)" style="float: right;"></a>
 	   </div>
