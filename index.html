@@ -52,9 +52,11 @@
 	 <div class="hit">
 	   <div class="hit-content">
 	     <a id="name">{{{_highlightResult.Namn.value}}}</a><br>
-	     <a id="class">Klass: {{{_highlightResult.Klass.value}}}</a><a href="https://cal.vklass.se/{{userID}}.ics"><img src="calendar_add.png" alt="Calendar icon" title="Schema" style="float: right;"></a><br>
-	     <a id="userID" href="https://vklass.se/user.aspx?id={{userID}}">Vklass profil</a>
-	     <a href="mailto:gymnasieabuse@protonmail.com?subject=Namnbyte&amp;body=Jag%20vill%20ändra%20mitt%20synliga%20namn%20på%20sidan%20till%20*fyll%20önskat%20namn%20här*%0D%0AobjectID: {{objectID}}"><img src="flag_red.png" alt="Red flag" title="Anmäl namnbyte (email)" style="float: right;"></a>
+		 <a id="userID" href="https://vklass.se/user.aspx?id={{userID}}"><img src="user_go.png" alt="Go to user icon" title="Gå till vklass profil"></a>
+		 <a href="https://cal.vklass.se/{{userID}}.ics"><img src="calendar_add.png" alt="Calendar icon" title="Schema"></a>
+		 <a href="mailto:gymnasieabuse@protonmail.com?subject=Namnbyte&amp;body=Jag%20vill%20ändra%20mitt%20synliga%20namn%20på%20sidan%20till%20*fyll%20önskat%20namn%20här*%0D%0AobjectID: {{objectID}}"><img src="user_edit.png" alt="Modify user icon" title="Anmäl namnbyte (email)"></a><br>
+	     <a id="class">Klass: {{{_highlightResult.Klass.value}}}</a>
+	     
 	   </div>
 	 </div>
 	</script>
