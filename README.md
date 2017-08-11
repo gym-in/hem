@@ -5,4 +5,4 @@ Sidan där 2017HT åk1 klasser listas! Repot / användarnamnet är förkortninga
 [Gymnasieantagning FAQ](https://docs.google.com/document/d/e/2PACX-1vQg5IzckJkuVkaQNDbhnEhiBswa4vFve768cM4P3ZZUtiaGchDChqvSxKHt0xZBTEplxx1cJWmz24UI/pub)
 
 # Licens
-Vi bryr oss inte om vår del av kod, så gör vad du vill med den. Dock är `flag_red.png` och `calendar_add.png` tillhörande [famfamfam](http://www.famfamfam.com/), som skyddas av [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/deed.sv)
+Vi bryr oss inte om vår del av kod, så gör vad du vill med den. Dock är `user_go.png`, `user_edit.png` och `calendar_add.png` tillhörande [famfamfam](http://www.famfamfam.com/), som skyddas av [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/deed.sv)
